@@ -91,10 +91,16 @@
 		 */
 		var init = $( this ).attr( 'data-dialog' );
 		if( !init ){
-			var html = '<div style="height:150px;width:150;background:white;">1111111</div>'
-			pageDialog1 = Dialog.page( html)
+			var html = '<div style="height:300px;width:150px;background:red;">1111111</div>'
+			pageDialog1 = Dialog.create({
+				type: 'page',
+				html: html,
+				unload: false,
+				shade: false
+			})
 			$( this ).attr( 'data-dialog', 'true' );
 		}else{
+			console.log(pageDialog1)
 			pageDialog1.show();
 		}
 
