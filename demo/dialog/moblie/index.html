@@ -77,7 +77,7 @@
 			html: '成功',
 			shade: false,
 			align: 'bottom',
-			animation: 'slideupin'
+			animation: 'slideup'
 		})
 
 	})
@@ -91,7 +91,7 @@
 		 */
 		var init = $( this ).attr( 'data-dialog' );
 		if( !init ){
-			var html = '<div style="height:300px;width:500px;background:white;">1111111</div>'
+			var html = '<div style="height:150px;width:150;background:white;">1111111</div>'
 			pageDialog1 = Dialog.page( html)
 			$( this ).attr( 'data-dialog', 'true' );
 		}else{
@@ -107,12 +107,12 @@
 		 * @prama { function } ok 确认回调事件
 		 * @return Dialog
 		 */
-		var html = '<div style="height:300px;width:100%;background:white;">1111111</div>'
+		var html = '<div style="height:150px;width:100%;background:white;">1111111</div>'
 		Dialog.create({
 			type: 'page',
 			html: html,
 			align: 'bottom',
-			animation: 'slideupin'
+			animation: 'slideup'
 		})
 
 	})
@@ -123,12 +123,12 @@
 		 * @prama { function } ok 确认回调事件
 		 * @return Dialog
 		 */
-		var html = '<div style="height:300px;width:100%;background:white;">1111111</div>'
+		var html = '<div style="height:150px;width:100%;background:white;">1111111</div>'
 		Dialog.create({
 			type: 'page',
 			html: html,
 			align: 'top',
-			animation: 'slidedownin'
+			animation: 'slidedown'
 		})
 
 	})
@@ -139,12 +139,12 @@
 		 * @prama { function } ok 确认回调事件
 		 * @return Dialog
 		 */
-		var html = '<div style="height:100%;width:500px;background:white;">1111111</div>'
+		var html = '<div style="height:100%;width:150px;background:white;">1111111</div>'
 		Dialog.create({
 			type: 'page',
 			html: html,
 			align: 'left',
-			animation: 'slideleftin'
+			animation: 'slideleft'
 		})
 
 	})
@@ -155,12 +155,12 @@
 		 * @prama { function } ok 确认回调事件
 		 * @return Dialog
 		 */
-		var html = '<div style="height:100%;width:500px;background:white;">1111111</div>'
+		var html = '<div style="height:100%;width:150px;background:white;">1111111</div>'
 		Dialog.create({
 			type: 'page',
 			html: html,
 			align: 'right',
-			animation: 'sliderightin'
+			animation: 'slideright'
 		})
 
 	})
