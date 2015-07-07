@@ -11,7 +11,8 @@
 		<input type="button" id="load" value="加载层">
 		<input type="button" id="confirm" value="警告层">
 		<input type="button" id="alert" value="提示层">
-		<input type="button" id="tip" value="tip层">
+		<input type="button" id="tip1" value="tip层1">
+		<input type="button" id="tip2" value="tip层2">
 	</div>
 	<div>
 		<input type="button" id="page1" value="自定义层中">
@@ -64,7 +65,7 @@
 		})
 
 	})
-	$( '#tip' ).click(function(){
+	$( '#tip1' ).click(function(){
 		/**
 		 * @prama { string } 消息内容
 		 * @prama { number|boolean } 时间延长 false不消失
@@ -80,6 +81,9 @@
 			animation: 'slideup'
 		})
 
+	})
+	$( '#tip2' ).click(function(){
+		Dialog.tip('自动关闭', 1800, true, function(){alert('关闭了')})
 	})
 	var pageDialog1 = null;
 	$( '#page1' ).click(function(){
