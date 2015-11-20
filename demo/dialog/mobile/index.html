@@ -76,7 +76,7 @@
 		Dialog.create({
 			type: 'tip',
 			html: '成功',
-			shade: false,
+			mask: false,
 			align: 'bottom',
 			animation: 'slideup'
 		})
@@ -100,7 +100,7 @@
 				type: 'page',
 				html: html,
 				unload: false,
-				shade: false
+				mask: false
 			})
 			$( this ).attr( 'data-dialog', 'true' );
 		}else{
